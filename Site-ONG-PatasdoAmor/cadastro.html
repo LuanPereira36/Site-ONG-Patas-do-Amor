@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Cadastre-se</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Página para cadastro na ONG">
+        <meta name="autor" content="Luan Dos Santos Pereira">
+        <meta name="keywords" content="cadastro, ONG, nome">
+    </head>
+
+    <body>
+        <!--Introdução da página-->
+        <header>
+            <h1>Olá, Faça seu cadastro!</h1>
+
+            <h2>Preencha o formulário a seguir para efetuar o seu cadastro na ONG </h2>
+
+            <p>Todos os campos devem ser preenchidos de forma correta, favor conferir seus dados antes de finalizar o cadastro.</p>
+        </header>
+
+        <main>
+            <!--Formulário-->
+            <section>
+                <h2>Cadastre aqui</h2>
+
+                <p>Já tenho cadastro,<a href="login.html">clique aqui</a>.</p>
+                <form>
+                    <fieldset>
+
+                        <legend><b>Informações de contato</b></legend>
+
+                        <!-- Nome Completo -->
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" name="nome" required><br>
+                        <!-- Data de Nascimento -->
+                        <label for="data">Data de nascimento:</label>
+                        <input type="date" id="data" name="data" required><br>
+                        <!-- CPF -->
+                        <label for="nome">CPF:</label>
+                        <input type="text" id="cpf" name="cpf" pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}" placeholder="000.000.000-00" maxlength="11" required><br>
+                        <!-- Telefone -->
+                        <label for="nome">Telefone:</label>
+                        <input type="text" id="telefone" name="telefone" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}" placeholder="(00) 00000-0000" maxlength="11" required><br>
+                        <!-- Email -->
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required><br>
+                        <!-- Endereço -->
+                        <label for="endereco">Endereço:</label>
+                        <input type="text" id="endereco" name="endereco" required><br>
+                        <!-- CEP -->
+                        <label for="cep">CEP:</label>
+                        <input type="text" id="cep" name="cep" pattern="[0-9]{5}-[0-9]{3}" placeholder="00000-000" maxlength="8" required><br>
+                        <!-- Cidade -->
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" id="cidade" name="cidade" required><br>
+                        <!-- Estado -->
+                        <label for="estado">Estado:</label>
+                        <input type="text" id="estado" name="estado" required><br>
+                        <!-- Senha -->
+                        <label for="senha">Crie uma senha:</label>
+                        <input type="password" id="senha" name="senha" maxlength="10" required><br>
+
+
+                        <br><button onclick="alert('OBRIGADO PELO APOIO !')">Enviar</button>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p><a href="index.html">Voltar ao menu</a></p>
+        </footer>
+    </body>
+
+</html>
