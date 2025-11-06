@@ -1,83 +1,166 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
     <head>
-        <title>ONG Patas do Amor</title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Plataforma online do projeto Patas do Amor, acesse para descobrir mais sobre a ONG e como ajudar.">
         <meta name="autor" content="Luan Dos Santos Pereira">
+        <meta name="color-scheme" content="light only"> 
         <meta name="keywords" content="ONG, Patas do Amor, doação, cachorro, gatos, ajuda">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="assets/logo.png"> 
+        <link rel="stylesheet" href="style.css">
+        <title>ONG Patas do Amor</title>
     </head>
 
     <body>
-        <header>
-            <!--Introduçâo-->
-            <h1>Bem-vindo ao Patas do Amor</h1><br>
+        <header class="header">
+            <section id="section-header">
+                <a href="#" class="logo">
+                    <img src="assets/logo.png" alt="logo da ONG" id="h-logo">
+                </a>
 
-            <h2>Mude uma vida. Adote um amigo.</h2><br>
+                <nav class="navbar">
+                    <ul>
+                        <li>
+                            <a href="#">Página Inicial</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">Projetos</a>
+                                <div class="dropdown-menu">
+                                    <a href="projetos.html">Resgates</a>
+                                    <a href="projetos.html">Cuidados Veterinários</a>
+                                    <a href="projetos.html">Rações</a>
+                                    <a href="projetos.html">Adoções</a>
+                                    <a href="projetos.html">Doações Finaceiras</a>
+                                </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">Cadastro</a>
+                                <div class="dropdown-menu">
+                                    <a href="login.html">Login</a>
+                                    <a href="cadastro.html">Cadastre-se</a>
+                                </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#">Galeria</a>
+                                <div class="dropdown-menu">
+                                    <a href="galeria.html">Fotos</a>
+                                    <a href="galeria.html">Videos</a>
+                                </div>
+                        </li>  
+                        </li>
+                        <li>
+                            <a href="#about">Sobre</a>
+                        </li>
+                    </ul>
+                </nav>
 
-            <p>Na Patas do Amor, a paixão pela causa animal se traduz em ação. Desde 1999, temos trabalhado incansavelmente para tirar cães e gatos das ruas, oferecendo-lhes cuidados veterinários, nutrição adequada e, o mais importante, a oportunidade de encontrar uma família para sempre. Explore nosso site, conheça nossas histórias e descubra como você pode fazer a diferença hoje.</p>
-        
-            <nav>
-                <ul>
-                    <li><a href="index.html">Página Inicial</a></li>
-                    <li><a href="projetos.html">Projetos</a></li>
-                    <li><a href="cadastro.html">Cadastro</a></li>
-                    <li><a href="galeria.html">Galeria</a></li>
-                    <li><a href="historias.html">Historias</a></li>
-                </ul>
-            </nav>
-        </header><br>
-
-        <hr>
+                <div class="icons">
+                    <img width="50" height="50" src="https://img.icons8.com/ios/50/info--v1.png" alt="informação" />
+                </div>
+            </section>
+        </header>
 
         <main>
-            <!--Sobre nós-->
-            <section>
-                <h2>Sobre nós</h2>
-                <details>
-                    <summary>Descubra +</summary>
-                    <p>Criada por um grupo de pessoas muito especíais, uma senhora que amava os animais, um casal que acolhia, cuidava e doava cães e veterinário recém-formado frustrado com a falta de recursos para animais abandonados. Juntos assim  decidiram criar uma ONG, assim nasceu o "Patas do Amor". Todos uniram forças, e logo outros voluntários se juntaram a eles: a aposentada que fazia roupinhas para os animais, o estudante que cuidava das redes sociais e o casal que oferecia lar temporário para os bichinhos mais frágeis. Os primeiros anos foram difíceis. O dinheiro era escasso, as noites de sono eram curtas e o trabalho parecia nunca ter fim. As campanhas de doação de ração eram modestas, os eventos de adoção eram realizados na praça da cidade e a sede era um pequeno galpão cedido por um amigo. Mas a cada resgate, a cada animal curado e, principalmente, a cada adoção bem-sucedida, eles renovavam suas energias. Logo a  ONG "Patas do Amor" se tornou um farol de esperança.</p>
-                </details>
-            </section><br>
-                <hr>
+            <div class="navbar-space">  
+            </div>
 
-            <!--Participe do Projeto-->
-            <section>
-                <h2>Venha participar do projeto e seja um apoiador do Patas de Amor!</h2><br>
-                <p>Acesse a página de <a href="projetos.html">projetos</a> para conhecer melhor como pode estar participando.</p>
-                <p>Acesse a página de <a href="cadastro.html">cadastrado</a> para se inscrever!</p>
-            </section>
-            <hr>
+            <div class="home-container">
+                <section id="#home">
+                    <div class="content">
+                        <h3>AJUDE UM AMIGO</h3>
+                        <P>Na Patas do Amor, a paixão pela causa animal se traduz em ação. Desde 1999, temos trabalhado incansavelmente
+                            para tirar cães e gatos das ruas, oferecendo-lhes cuidados veterinários, nutrição adequada e, o mais
+                            importante, a oportunidade de encontrar uma família para sempre. Explore nosso site, conheça nossas
+                            histórias e descubra como você pode fazer a diferença hoje.
+                        </P>
+                        <a href="login.html" class="btn">Ajudar Agora !</a>
+                    </div>
+                </section>
+            </div>
 
-            <!--Novidades-->
-            <section>
-                <h2>Novidades</h2>
-                <ul>
-                    <li>Nova lei em prol dos animais...
-                        <details>
-                            <summary>Saiba +</summary>
-                                <p>Lei Joca, após a morte do cão Joca em 2024, o Senado aprovou novas regras para o transporte aéreo de cães e gatos em voos domésticos. Principais mudanças: A lei autoriza o transporte de cães e gatos de até 50 kg na cabine do avião, junto aos tutores. Embora a proposta inicial obrigasse essa medida, o Senado a flexibilizou, permitindo que o tutor escolha entre a cabine ou o compartimento de carga, desde que o bem-estar do animal seja garantido.</p>
-                        </details>
-                    </li>
-                    <li>Lei proibe acorrentamento de pet...
-                        <details>
-                            <summary>Saiba +</summary>
-                            <p>Proibição de acorrentamento de cães e gatos, a Lei Estadual nº 18.184/2025, sancionada em agosto de 2025 em São Paulo, proíbe o acorrentamento e outras formas de alojamento inadequado de cães e gatos. A lei proíbe a restrição da liberdade dos animais e considera a prática uma forma de maus-tratos.</p>
-                        </details>
-                    </li>
-                    <li>Diga não ao testes em animais...
-                        <details>
-                            <summary>Saiba +</summary>
-                            <p>Proibição de testes em animais, a Lei nº 15.183, aprovada em julho de 2025, proíbe a utilização de animais vertebrados vivos em testes de produtos de higiene pessoal, cosméticos e perfumes. A medida visa acabar com a crueldade imposta aos animais na indústria de cosméticos e incentiva a busca por métodos de teste alternativos.</p>
-                        </details>
-                    </li>
-                </ul>  
-            </section>
-        </main>  
-        <hr>
+            <div>
+                <section class="about" id="about">
+                    <h2>Sobre Nós</h2>
+                    <h3>Criada por um grupo de pessoas muito especíais, uma senhora que amava os animais, um casal que
+                        acolhia, cuidava e doava cães e veterinário recém-formado frustrado com a falta de recursos para
+                        animais abandonados. Juntos assim decidiram criar uma ONG, assim nasceu o "Patas do Amor". Todos
+                        uniram forças, e logo outros voluntários se juntaram a eles: a aposentada que fazia roupinhas para
+                        os animais, o estudante que cuidava das redes sociais e o casal que oferecia lar temporário para os
+                        bichinhos mais frágeis. Os primeiros anos foram difíceis. O dinheiro era escasso, as noites de sono
+                        eram curtas e o trabalho parecia nunca ter fim. As campanhas de doação de ração eram modestas, os
+                        eventos de adoção eram realizados na praça da cidade e a sede era um pequeno galpão cedido por um
+                        amigo. Mas a cada resgate, a cada animal curado e, principalmente, a cada adoção bem-sucedida, eles
+                        renovavam suas energias. Logo a ONG "Patas do Amor" se tornou um farol de esperança.
+                    </h3>
+                    
+
+
+                    </div>
+                </section>
+            </div>
+        </main>
+
         <footer>
-            <p>&copy;Patas de Amor. Todos os direitor reservados</p>
-            <p>Contato: (16) 99999-9999</p>
+            <div id="footer-content">
+                <div id="contacts">
+                    <img src="assets/logo.png" alt="logo da ONG" id="f-logo">
+                    <h5>Every life is a life.</h5>
+                </div>
+
+                <ul class="flist">
+                    <li>
+                        <h4>Contatos</h4>
+                    </li>
+                    <li>
+                        <a href="#" class="f-link"><h5>ong_patasdoamor@gmail.com</h5></a>
+                    </li>
+                    <li>
+                        <a href="#" class="f-link"><h5>Tel (16) 99999-9999</h5></a>
+                    </li>
+                    <li>
+                        <a href="#" class="f-link"><h5>@PatasDoAmorONG</h5></a>
+                    </li>
+                </ul>
+
+                <ul class="flist">
+                    <li>
+                        <h4>Encontre</h4>
+                    </li>
+                    <li>
+                        <a href="#" class="f-link"><h5>Página Inicial</h5></a>
+                    </li>
+                    <li>
+                        <a href="#" class="f-link"><h5>Cadastro</h5></a>
+                    </li>
+                    <li>
+                        <a href="#" class="f-link"><h5>Sobre</h5></a>
+                    </li>
+                </ul>
+
+                <div id="newletters">
+                    <h4>Subscribe</h4>
+
+                    <p>
+                        Entre com seu Email para receber novidades sobre a ONG e sobre projetos.
+                    </p>
+
+                    <div id="input-group">
+                        <input type="email" id="email">
+                        <button>
+                            <i class="fa-regular fa-envelope"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="copyright">
+                &#169
+                2025 All right reserved
+            </div>
         </footer>
     </body>
 </html>
