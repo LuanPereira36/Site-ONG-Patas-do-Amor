@@ -1,0 +1,596 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+/* Fonte importada do Google Fontes*/
+
+:root {
+    /* Cores */
+    --white: #fff;
+    --black: #000;
+    --gray: #999999;
+    --greenlight: #798252;
+    --greendark: #4d523a;
+    --brow: #a17f62;
+    --background: rgb(46, 49, 31);
+    --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+
+    /* Espacamento */
+    --espacamentobase: 1rem; 
+    --espacamento-1: calc(0.5 * var(--espacamentobase));   /* (8px)  */
+    --espacamento-2: var(--espacamentobase);               /* (16px) */
+    --espacamentoe-3: calc(1.5 * var(--espacamentobase));  /* (24px) */
+    --espacamento-4: calc(2 * var(--espacamentobase));     /* (32px) */
+    --espacamento-5: calc(3 * var(--espacamentobase));     /* (48px) */
+    --espacamento-6: calc(4 * var(--espacamentobase));     /* (64px) */
+
+}
+
+/* Padronização do layout da página*/
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Cabin", sans-serif;
+}
+
+/* CSS do body e section em geral*/
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: var(--background);
+}
+
+section {
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* CSS do header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    width: 100%;
+    border-bottom: var(--border);
+    background-color: var(--black);
+}
+
+.navbar-space {
+    height: 136,2px;
+}
+
+#section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+}
+
+.navbar a{
+    margin: 0 2rem;
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.navbar a:hover{
+    color: var(--white);
+    border-bottom: 0.1rem solid var(--border);
+    padding-bottom: 0.5rem;
+}
+
+nav li{
+    display: inline-block;
+}
+
+nav li a{
+    display: inline-block;
+    color: var(--greendark);
+    text-decoration: none;
+    padding: 15px;
+}
+
+nav li a:hover {
+    background-color: var(--greenlight);
+    border-radius: 8px;
+}
+
+/* CSS do menu dropdown*/
+.dropdown-menu {
+    position: absolute;
+    border-radius: 8px;
+    background-color: var(--black);
+    box-shadow: 0 0 2px var(--white);
+    display: none;
+}
+
+.dropdown-menu a {
+    display: block;
+    color: var(--white);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+#h-logo {
+    display: flex;
+    flex-basis: 128px;
+    width: 8rem;
+    height: 8rem;
+    margin: 0rem;
+    cursor: pointer;
+}
+
+.icons img {
+    color: var(--white);
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.icons img:hover {
+    width: 40px;
+    height: 40px;
+}
+
+
+/* CSS do main */
+.home-container {
+    background: url("assets/backgroundhome.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.content {
+    max-width: 60rem;
+}
+
+.content h3 {
+    color: var(--white);
+    font-size: 6rem;
+}
+
+.content p {
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+.btn {
+    background: var(--brow);
+    color: var(--white);
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+
+.home-container section {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.about h2 {
+    color: var(--white);
+    padding-bottom: 1rem;
+    font-size: 4rem;
+}
+
+.about h3 {
+    letter-spacing: 0.2rem;
+    color: var(--white);
+    font-weight: 80;
+    font-size: 1.3rem;
+}
+
+/* CSS do footer */
+footer {
+    width: 100%;
+    color: var(--white);
+    
+}
+
+#footer-content {
+    background-color: var(--black);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0.5rem;
+}
+
+#footer-content h5{
+    font-size: 1.2rem;
+    padding-left: 1.5rem;
+    display: flex;
+    color: var(--gray);
+
+}
+
+#f-logo{
+    width: 8rem;
+    height: 8rem;
+}
+
+.flist {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+    padding: 2rem;
+}
+
+.flist h4 {
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+
+.flist a {
+    font-size: 1.2rem;
+}
+
+.flist .f-link{
+    color: var(--gray);
+    text-decoration: none;
+    transition: all 0.4s; 
+}
+
+.flist .f-link:hover {
+    color: var(--brow);
+}
+
+#newletters {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#newletters h4{
+    font-size: 2rem;
+    padding-top: 2rem;
+}
+
+#newletters p{
+    color: var(--gray);
+    font-size: 1rem;
+}
+
+#input-group {
+    display: flex;
+    align-items: center;
+    background-color: var(--gray);
+    border-radius: 4px;
+}
+
+#input-group input {
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+#input-group button {
+    background-color: var(--brow);
+    border: none;
+    color: var(--white);
+    padding: 0px 1.25rem;
+    font-size: 1.5rem;
+    height: 100%;
+    border-radius: 0px 4px 0px;
+    cursor: pointer;
+}
+
+#input-group button:hover {
+    opacity: 0.8;
+}
+
+#copyright {
+    display: flex;
+    justify-content: center;
+    background-color: var(--black);
+    font-size: 0.9rem;
+    padding: 0.35rem;
+    font-weight: 100;
+}
+
+@media screen and (max-width:768px) {
+    #footer-content {
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+    }  
+}
+
+@media screen and (max-width:426px) {
+    #footer-content {
+        grid-template-columns: repeat(1,1fr);
+        padding: 3rem 2rem;
+    }  
+}
+
+/* CSS da pág. Galeria*/
+
+#g-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--greenlight);
+}
+
+
+#g-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: var(--white);
+    background-color: var(--black);
+    width: 100%;
+    height: 8rem;
+    gap: 0.5rem;
+
+}
+
+#g-header h1{
+    font-size: 4.5rem;
+}
+
+#g-header h2{
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: var(--gray);
+}
+
+#gallery {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+    margin-left: 17rem;
+    margin-right: 17rem;
+}
+
+.div-img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+}
+
+.div-img img{
+    margin: 0.5rem;
+    border: var(--white) solid 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+.d-img {
+    color: var(--white);
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 3rem;
+}
+
+.d-img p {
+    font-size: 1.2rem;
+}
+
+.div-mp4 h3{
+    text-align: center;
+    color: var(--white);
+    font-size: 2rem;
+}
+
+#f-gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--black);
+    height: 3rem;
+    font-size: 1rem;
+}
+
+#f-gallery a{
+    color: var(--gray);
+}
+
+
+@media (max-width: 750px) {
+    .div-img {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+/* CSS da pág. Projetos*/
+
+#body-projeto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--greenlight);
+}
+
+
+#header-projeto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: var(--white);
+    background-color: var(--black);
+    font-size: 1.4rem;
+    padding: 0;
+    width: 100%;
+    height: 8rem;
+    gap: 0.5rem;
+
+}
+
+#main-projeto section{
+    padding: 0;
+    border: var(--greenlight) solid 1rem;
+    border-radius: 2rem;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+#main-projeto h2 {
+    color: var(--greendark);
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 1000;
+}
+
+#main-projeto p {
+    color: var(--white);
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+#main-projeto ul {
+    list-style-type: none; 
+    color: var(--white);
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+#main-projeto li {
+    
+    padding: 0.5rem;
+   
+}
+
+#footer-projeto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black);
+    padding-top: 0.3rem;
+    padding-bottom: 1rem;
+    font-size: 0.8rem;
+}
+
+.btn-projeto{
+    background: var(--greendark);
+    color: var(--white);
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 1rem;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+
+/* CSS da pág. Login e Cadastro*/
+
+#body-login {
+  background-color: var(--greendark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#main-login {
+   width: 100%;
+   max-width: 380px;
+
+}
+
+.container-login{
+  background: var(--white);
+  width: 100%;
+  max-width: 380px;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.18);
+  animation: fade 0.5s ease;
+}
+
+.container-login h2{
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--black);
+}
+
+.input-field{
+  margin-bottom: 0.28rem;
+}
+
+.input-field label{
+  font-size: 0.9rem;
+  color: var(--black);
+}
+
+.input-field input{
+  width: 100%;
+  padding: 0.7rem;
+  margin-top: 0.3rem;
+  border: 1px solid var(--gray);
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input-field input:focus{
+  border-color: var(--greenlight);
+}
+
+.btn-entrar{
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  background: var(--greenlight);
+  color: var(--white);
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-entrar:hover{
+  background: var(--greendark);
+}
+
+p{
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+a{
+  color: var(--gray);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+#p-cadastro {
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 350px){
+  .container-login{
+    margin: 1rem;
+  }
+}
